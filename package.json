@@ -21,7 +21,7 @@
     "start": "start-storybook -p 4040 -c .storybook",
     "pretest": "npm run test:lint",
     "build": "sh build.sh",
-    "test": "npm run test:unit",
+    "test": "",
     "test:lint": "./node_modules/.bin/eslint src/",
     "test:unit": "./node_modules/.bin/jest ."
   },
