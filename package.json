@@ -19,12 +19,12 @@
   },
   "scripts": {
     "start": "start-storybook -p 6006 -c .storybook",
-    "static": "build-storybook -c .storybook -o docs",
+    "build:lib": "rm -rf dist/*; NODE_ENV=production webpack",
+    "build:static": "build-storybook -c .storybook -o docs",
     "pretest": "npm run test:lint",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:lint": "eslint src/",
-    "test:unit": "eslint src/",
-    "build": "rm -rf dist/*; NODE_ENV=production webpack",
+    "test": "npm run test:unit",
+    "test:lint": "./node_modules/.bin/eslint src/",
+    "test:unit": "./node_modules/.bin/jest .",
     "deploy": "npm publish --access=public"
   },
   "dependencies": {
@@ -50,7 +50,18 @@
     "eslint": "4.1.1",
     "eslint-config-standard": "10.2.1",
     "eslint-config-standard-react": "5.0.0",
+    "jest": "22.3.0",
     "standard": "10.0.2",
     "webpack": "3.11.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest"
+    }
   }
 }
