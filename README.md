@@ -4,5 +4,5 @@ https://jordanpapaleo.github.io/ui-library/
 
 ## Todo
 
-- [ ] Setup static to gh pages
-- [ ] Setup up jest
+- [ ] Setup tests with Jest
+- [ ] Setup Changelog generator https://github.com/skywinder/github-changelog-generator
