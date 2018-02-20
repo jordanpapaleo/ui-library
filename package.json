@@ -18,14 +18,12 @@
     "url": "https://github.com/jordanpapaleo/ui-library/issues"
   },
   "scripts": {
-    "start": "start-storybook -p 6006 -c .storybook",
-    "build:lib": "rm -rf dist/*; NODE_ENV=production webpack",
-    "build:static": "build-storybook -c .storybook -o docs",
+    "start": "start-storybook -p 4040 -c .storybook",
     "pretest": "npm run test:lint",
+    "build": "sh build.sh",
     "test": "npm run test:unit",
     "test:lint": "./node_modules/.bin/eslint src/",
-    "test:unit": "./node_modules/.bin/jest .",
-    "deploy": "npm publish --access=public"
+    "test:unit": "./node_modules/.bin/jest ."
   },
   "dependencies": {
     "prop-types": "15.6.0",
