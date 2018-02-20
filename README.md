@@ -1,11 +1,6 @@
 # ui-library
 
-## To deploy
-
-- `npm run build`
-- commit changes
-- `npm version` major minor patch
-- `npm publish`
+https://jordanpapaleo.github.io/ui-library/
 
 ## Todo
 
