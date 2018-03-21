@@ -58,7 +58,6 @@
     "webpack": "3.11.0"
   },
   "jest": {
-    "preset": "react",
     "coverageReporters": [
       "lcov",
       "json-summary"
