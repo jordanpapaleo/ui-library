@@ -4,7 +4,6 @@ import React from 'react'
 import Chance from 'chance'
 import {storiesOf} from '@storybook/react'
 import {withNotes} from '@storybook/addon-notes'
-import {action} from '@storybook/addon-actions'
 import Address from '../src/Address'
 import addressMarkdown from '../src/Address/address.md'
 

@@ -1,4 +1,4 @@
-module.exports = {
+Ilmodule.exports = {
   module: {
     rules: [
       {

@@ -1,5 +1,5 @@
 const path = require('path')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 
 module.exports = {
   devtool: 'source-map',
@@ -11,7 +11,7 @@ module.exports = {
     libraryTarget: 'umd'
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js']
   },
   module: {
     rules: [
