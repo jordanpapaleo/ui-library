@@ -45,21 +45,46 @@
     "babel-preset-react-app": "3.0.1",
     "babel-runtime": "6.23.0",
     "chance": "1.0.13",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.3",
     "eslint": "4.1.1",
     "eslint-config-standard": "10.2.1",
     "eslint-config-standard-react": "5.0.0",
     "jest": "22.3.0",
+    "jest-cli": "23.0.0-alpha.0",
+    "react-test-renderer": "16.2.0",
     "standard": "10.0.2",
     "webpack": "3.11.0"
   },
   "jest": {
-    "collectCoverageFrom": [
-      "src/**/*.{js}"
+    "preset": "react",
+    "coverageReporters": [
+      "lcov",
+      "json-summary"
     ],
-    "testEnvironment": "node",
-    "testURL": "http://localhost",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/__tests__/**",
+      "!src/**/__snapshots__/**"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "resetModules": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ],
     "transform": {
-      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest"
-    }
+      "^.+\\.js$": "babel-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/*.test.js"
+    ]
   }
 }
