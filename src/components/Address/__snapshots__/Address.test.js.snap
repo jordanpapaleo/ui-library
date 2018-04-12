@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address matches snapshot 1`] = `
+<span
+  className="address-component"
+>
+  <span
+    style={undefined}
+  >
+    123 Sesame Street
+    
+    , 
+  </span>
+  <span
+    style={undefined}
+  >
+    New York
+    , 
+    NY
+     
+    12345
+  </span>
+</span>
+`;
